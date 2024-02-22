@@ -8,18 +8,10 @@
 
 /* ---HEADER--- */
 
-.header__vista {
-    width: 100vw;
-
-}
-
 .header__color {
     background-color: rgba(168, 212, 172);
 }
 
-.header__height {
-    height: 110px;
-}
 
 .header__nav__derecha {
     flex-direction: row-reverse;
@@ -45,7 +37,10 @@
 }
 
 
-/* ---MAIN--- */
+/* ----------------------------------------------------------------MAIN---------------------------------------------------------------------------- */
+
+/* -------------------Base del index (Cards, titulos, subtitulos y parte del body)---------------------------- */
+
 
 h4 {
     text-align: center;
@@ -55,13 +50,11 @@ h4 {
     overflow: hidden;
 }
 
-
-.subtitulo {
+.main__subtitulo {
     text-align: center;
     margin: 0;
     padding: 0;
     background-color: #a8d4ac;
-
 
 }
 
@@ -74,8 +67,42 @@ body {
     overflow-x: hidden;
 }
 
+.card__texto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
 
-.main__size {
+.margen {
+    margin: 10px;
+    padding: 0;
+}
+
+/* ----Nivela la altura de todas la imagenes en las que son parte de Cards----- */
+.imagen {
+    height: 190px;
+}
+
+/* ----Medida del logo en el Index/Experiencias---- */
+
+.logo__agencia {
+    width: 80px;
+}
+
+/*-----------------Irframe---------------- */
+
+
+.main__videos__size {
+    width: 600px;
+    height: 300px;
+}
+
+
+
+/*-------------------------------------Grillas del main----------------------------------------- */
+
+.index__lugares__size {
     width: 100vw;
     display: grid;
     padding: 0 10% 1% 9%;
@@ -108,7 +135,17 @@ body {
 }
 
 
-.main__tour {
+
+/* ------------------------Index(Sección de Tours, la divición de la grilla)---------------------------- */
+.index__tour--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.index__tour {
     width: 800px;
     display: grid;
     gap: 5px;
@@ -137,11 +174,6 @@ body {
         "main__tour2--arriba main__tour2--arriba"
         "main__tour2--abajo main__tour2--abajo"
         "main__tour2--abajo main__tour2--abajo";
-
-}
-
-.color {
-    background-color: green;
 }
 
 .main__tour2--arriba {
@@ -159,43 +191,9 @@ body {
     padding: 2px;
 }
 
-.texto {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-}
 
 
-.tour {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-.margen {
-    margin: 10px;
-    padding: 0;
-}
-
-.color {
-    background-color: green;
-}
-
-.imagen {
-    height: 190px;
-}
-
-.imagen2 {
-    height: 300px;
-}
-
-.logo__agencia {
-    width: 80px;
-}
+/* ---------------------Index(Sección de Fotos, la divición de la grilla)-------------------- */
 
 .main__fotos--ancho {
     width: 600px;
@@ -267,6 +265,8 @@ body {
 
 }
 
+/* Caracteristica de las fotos en la grilla de la Sección Fotos-index */
+
 .main__fotos--imagen {
     height: 160px;
     width: 100%;
@@ -279,6 +279,8 @@ body {
     margin: 12px;
 }
 
+
+/* ---------------------Index(Sección de Videos, la divición de la grilla)-------------------- */
 
 .main__videos {
     display: grid;
@@ -312,9 +314,62 @@ body {
     justify-content: center;
     align-items: center;
 
-   }
+}
 
 
+
+
+/* -------------------------Pagina - Agencia Grilla----------------------- */
+
+.agencia__size {
+    width: 100vw;
+    display: grid;
+    padding: 0 20% 0 20%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "main__agencia1 main__agencia2"
+    ;
+}
+
+.main__agencia1 {
+    grid-area: main__agencia1;
+
+}
+
+.main__agencia2 {
+    grid-area: main__agencia2;
+
+}
+
+
+
+
+/* -------------------------Pagina - Lugares ---------------------------- */
+
+
+.lugares__card__centrado {
+    display: flex;
+    justify-content: center;
+    display: center;
+    width: 100%;
+    height: 180px;
+}
+
+.main__lugares--card {
+
+    margin: 0 25% 2% 25%;
+}
+
+
+
+/* ---------------------------------------Footer-------------------------------------------- */
 
 .footer {
     background-color: rgba(168, 212, 172);
@@ -336,13 +391,13 @@ body {
 .footer-links h6 {
     font-size: 15px;
     color: black;
-    
+
     font-weight: 500;
     border-bottom: 2px solid rgb(255, 255, 255);
     display: inline-block;
 }
 
-.footer-links ul{
+.footer-links ul {
     padding: 0;
     margin: 0;
 }
@@ -357,7 +412,11 @@ body {
 
 }
 
-.form__centrado{
+
+
+
+/* -------------------------------Pagina - Contáctanos---------------------------------- */
+.form__centrado {
     width: 100vw;
     padding: 0 15% 0 15%;
 
@@ -373,87 +432,11 @@ body {
 
 
 
-.agencias__ancho{
-    width: 400px;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
- 
-
-}
-
-.agencia__size{
-    width: 100vw;
-    display: grid;
-    padding: 0 20% 0 20%;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    
-    gap: 40px;
-
-    box-sizing: border-box;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "main__agencia1 main__agencia2"
-    ;
-}
-
-.main__agencia1{
-    grid-area: main__agencia1;
-
-}
-
-.main__agencia2{
-    grid-area: main__agencia2;
-   
-}
-
-.card__centrado{
-    display: flex;
-    justify-content: center;
-    display: center;
-    width: 100%;
-    height: 180px;
-}
-
-.main__lugares--card{
-
-    margin: 0 25% 2% 25%;
-}
-
-.card__tipografia{
-    padding: 0;
-    text-underline-offset: 1px solid black;
-}
-
-.card__centrado__experiencias{
-    display: flex;
-    justify-content: center;
-    display: center;
-    width: 100%;
-
-}
-
-.imagen__experiencias{
-
-height: 160px;
-}
-
-.main__experiencias--card{
-
-    margin: 0 18% 2% 18%;
-}
-
-.main__videos__size{
-    width: 600px;
-    height: 300px;
-}
 
 
 
+/* --------------------------Mobile Last---------------------------- */
 
-/* --Mobile Last-- */
 
 /* --Medias Queries-- */
 @media (max-width:610px) {
@@ -476,24 +459,24 @@ height: 160px;
             "main__lugares3"
         ;
     }
-    
+
     .main__lugares1__responsive1 {
         grid-area: main__lugares1;
         padding: 0 15% 0 15%;
-    
+
     }
-    
+
     .main__lugares2__responsive1 {
         grid-area: main__lugares2;
         padding: 0 15% 0 15%;
     }
-    
+
     .main__lugares3__responsive1 {
         grid-area: main__lugares3;
         padding: 0 15% 0 15%;
     }
-    
 
+/*--------Index (Sección de Tours -Responsive Se cambia a dos columnas) */
 
     .main__tour {
         width: 400px;
@@ -501,14 +484,14 @@ height: 160px;
         gap: 5px;
         padding: 5px;
         height: 200px;
-    
+
         grid-template-columns: 1.5fr 2fr;
         grid-template-areas:
             "main__tour1 main__tour2"
         ;
-    
+
     }
-    
+
     .main__tour1 {
         grid-area: main__tour1;
         display: flex;
@@ -516,22 +499,22 @@ height: 160px;
         align-items: center;
         padding: 0 10px 0 10px;
     }
-    
+
     .main__tour2 {
         grid-area: main__tour2;
         padding: 0 10px 0 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    
+
         grid-template-areas:
             "main__tour2--arriba main__tour2--arriba"
             "main__tour2--abajo main__tour2--abajo"
             "main__tour2--abajo main__tour2--abajo";
-    
+
     }
 
-    .logo__agencia{
+    .logo__agencia {
         width: 45px;
     }
 
@@ -548,11 +531,11 @@ height: 160px;
         font-size: 10px;
     }
 
-    h5{
+    h5 {
         font-size: 11px;
     }
-    
-    .estilo_subtitulo{
+
+    .estilo_subtitulo {
         font-size: 15px;
         margin: 0;
     }
@@ -565,7 +548,7 @@ height: 160px;
 
     .main__fotos--ancho {
         width: 300px;
-    
+
     }
 
     .main__fotos--abajo {
@@ -574,7 +557,7 @@ height: 160px;
 
     }
 
-    .main__fotos--arriba{
+    .main__fotos--arriba {
         width: 400px;
     }
 
@@ -586,7 +569,7 @@ height: 160px;
         margin: 12px;
     }
 
-    .main__videos__size{
+    .main__videos__size {
         width: 380px;
         height: 300px;
     }
@@ -602,9 +585,10 @@ height: 160px;
         width: 50%;
         display: block;
         padding: 5px;
-    
+
     }
-    .footer__centrar{
+
+    .footer__centrar {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -620,7 +604,6 @@ height: 160px;
 
 
 
-
 }
 
 
@@ -643,163 +626,6 @@ height: 160px;
 
 
 
-.base article img {
-    width: 250px;
-    height: 250px;
-}
-
-
-.navegador_bloques li {
-    background-color: rgb(106, 142, 47, 0.43);
-    padding: 10px;
-    margin: 5px;
-    list-style: none;
-    display: inline-block;
-}
-
-.navegador_bloques {
-    padding: 5px 0 0 0;
-    text-align: center;
-
-}
-
-.navegador_bloques img {
-    width: 100px;
-    height: 100px;
-    padding: 1px;
-}
-
-.base {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 
 
-
-.base_lugares {
-    border: 1px;
-    margin: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 300px;
-    background-color: rgba(168, 212, 172);
-    text-align: center;
-}
-
-.base_tours {
-    border: 1px;
-    margin: 10px;
-    padding: 10px;
-    width: 400px;
-    height: 220px;
-    background-color: rgba(168, 212, 172);
-    text-align: center;
-}
-
-.base_tours img {
-    margin: 5px;
-    padding: 5px;
-}
-
-#foto {
-    height: 150px;
-}
-
-.base_texto {
-    width: 200px;
-    margin: 18px;
-    padding: 100px 10px 80px 10px;
-    text-align: center;
-    border: 1px solid;
-}
-
-.base_texto p {
-    text-align: center;
-    text-transform: capitalize;
-
-}
-
-.base_tex {
-    width: 300px;
-    height: 210px;
-    margin: 10px;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid;
-    overflow: scroll;
-}
-
-.base_tex p {
-    text-align: center;
-    text-transform: capitalize;
-
-}
-
-.base_fotos {
-    border: 1px;
-    margin: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 300px;
-    background-color: rgba(168, 212, 172);
-    text-align: center;
-    display: inline-block;
-}
-
-
-.base_video {
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-
-.agencia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.agencia_imagen img {
-    width: 300px;
-    height: 190px;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-}
-
-.agencia_texto {
-    width: 200px;
-    margin: 18px;
-    padding: 27px 45px 30px 45px;
-    text-align: center;
-    border: 1px solid;
-}
-
-.base_tours iframe {
-    width: 300px;
-    height: 200px;
-    padding: 10px;
-}
-
-.base_tours #exp {
-    margin: 10px;
-    padding: 25px 0 10px 0;
-
-}
-
-textarea {
-    width: 800px;
-    height: 100px;
-}
-
-input {
-    width: 200px;
-}
