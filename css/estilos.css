@@ -476,6 +476,11 @@ body {
         padding: 0 15% 0 15%;
     }
 
+    .form__centrado {
+        padding: 0 5px 0 5px;
+    
+    }
+
 /*--------Index (Sección de Tours -Responsive Se cambia a dos columnas) */
 
     .main__tour {
