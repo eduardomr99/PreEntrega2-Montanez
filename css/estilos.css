@@ -74,6 +74,14 @@ body {
     padding: 10px;
 }
 
+.card__texto2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
 .margen {
     margin: 10px;
     padding: 0;
@@ -105,7 +113,7 @@ body {
 .index__lugares__size {
     width: 100vw;
     display: grid;
-    padding: 0 10% 1% 9%;
+    padding: 0 8% 1% 7%;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -322,9 +330,9 @@ body {
 /* -------------------------Pagina - Agencia Grilla----------------------- */
 
 .agencia__size {
-    width: 100vw;
+    width: 800px;
     display: grid;
-    padding: 0 20% 0 20%;
+    padding: 0 30px 0 30px;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -348,6 +356,14 @@ body {
 
 }
 
+.agencia__size--responsive {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 
@@ -367,6 +383,13 @@ body {
     margin: 0 25% 2% 25%;
 }
 
+.card__titulo {
+    align-items: center;
+    font-size: large;
+    padding: 5px 10% 5px 10%;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* ---------------------------------------Footer-------------------------------------------- */
@@ -439,9 +462,47 @@ body {
 
 
 /* --Medias Queries-- */
-@media (max-width:610px) {
 
-    .main__size {
+
+
+@media (max-width: 950px) {
+    .card__texto {
+
+        font-size: small;
+  
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .index__lugares__size {
+
+        padding: 0 4% 0.5% 3%;
+
+    }
+
+    .agencia__size {
+
+        width: 600px;
+    }
+
+
+    .card__texto {
+
+        font-size: medium;
+ 
+    }
+
+
+
+
+}
+
+@media (max-width:640px) {
+
+    .index__lugares__size {
         display: none;
     }
 
@@ -462,33 +523,67 @@ body {
 
     .main__lugares1__responsive1 {
         grid-area: main__lugares1;
-        padding: 0 15% 0 15%;
+        padding: 0 50px 0 50px;
 
     }
 
     .main__lugares2__responsive1 {
         grid-area: main__lugares2;
-        padding: 0 15% 0 15%;
+        padding: 0 50px 0 50px;
     }
 
     .main__lugares3__responsive1 {
         grid-area: main__lugares3;
-        padding: 0 15% 0 15%;
+        padding: 0 50px 0 50px;
     }
 
     .form__centrado {
+        width: 100%;
         padding: 0 5px 0 5px;
-    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
-/*--------Index (Sección de Tours -Responsive Se cambia a dos columnas) */
 
-    .main__tour {
-        width: 400px;
+    .agencia__size {
+        width: 300px;
+        display: grid;
+        margin: 0;
+        gap: 2px;
+        padding: 0 20px 0 20px;
+
+        box-sizing: border-box;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "main__agencia1"
+            "main__agencia2"
+        ;
+    }
+
+    .main__agencia1 {
+        grid-area: main__agencia1;
+
+    }
+
+    .main__agencia2 {
+        grid-area: main__agencia2;
+
+    }
+
+
+
+
+
+    /*--------Index (Sección de Tours -Responsive Se cambia a dos columnas) */
+
+    .index__tour {
+        width: 500px;
         display: grid;
         gap: 5px;
         padding: 5px;
-        height: 200px;
 
         grid-template-columns: 1.5fr 2fr;
         grid-template-areas:
@@ -500,6 +595,7 @@ body {
     .main__tour1 {
         grid-area: main__tour1;
         display: flex;
+        height: 100%;
         justify-content: center;
         align-items: center;
         padding: 0 10px 0 10px;
@@ -508,6 +604,7 @@ body {
     .main__tour2 {
         grid-area: main__tour2;
         padding: 0 10px 0 10px;
+        height: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -599,12 +696,25 @@ body {
         align-items: center;
 
     }
-}
 
-@media (max-width:768px) {
+    .card__texto {
 
-    .main__size {
-        padding: 0 2% 1% 2%;
+        font-size: small;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .card__texto2 {
+
+        font-size: xx-small;
+    }
+
+    .card__titulo {
+        align-items: center;
+        font-size: medium;
+        padding: 5px 10% 5px 10%;
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -613,24 +723,31 @@ body {
 
 
 
+@media (max-width: 500px) {
+
+    .main__lugares1__responsive1 {
+        grid-area: main__lugares1;
+        padding: 0 10% 0 10%;
+
+    }
+
+    .main__lugares2__responsive1 {
+        grid-area: main__lugares2;
+        padding: 0 10% 0 10%;
+    }
+
+    .main__lugares3__responsive1 {
+        grid-area: main__lugares3;
+        padding: 0 10% 0 10%;
+    }
 
 
 
+    .main__lugares--card {
+
+        margin: 0 10% 2% 10%;
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
