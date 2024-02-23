@@ -14,6 +14,7 @@
 <body>
 
     <head>
+        <!-- Navegador -->
 
         <nav class="navbar bg-body-tertiary navbar-expand-lg">
             <div class="header__color container-fluid">
@@ -46,11 +47,11 @@
 
         <h4> Lugares </h4>
 
-
+        <!-- Carrusel de fotos por ubicacion (Lima/cuzco/arq)  -->
         <div class="index__lugares__size main__size__responsive1">
             <div class="main__lugares1 main__lugares1__responsive1">
                 <div class="card">
-                    <div id="carousel1" class="carousel slide carousel-fade">
+                    <div id="carousel__lugares--lima" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./resources/lima-fotos/Lima-costa2.jpg" class="imagen card-img-top d-block"
@@ -65,12 +66,12 @@
                                     class="imagen card-img-top d-block w-100" alt="lima">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__lugares--lima"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__lugares--lima"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -87,7 +88,7 @@
             </div>
             <div class="main__lugares2 main__lugares2__responsive1">
                 <div class="card">
-                    <div id="carousel2" class="carousel slide carousel-fade">
+                    <div id="carousel__lugares--cuzco" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./resources/cuz-fotos/machu-picchu.jpg" class="imagen card-img-top d-block"
@@ -102,12 +103,12 @@
                                     class="imagen card-img-top d-block w-100" alt="cuzco">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__lugares--cuzco"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__lugares--cuzco"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -122,7 +123,7 @@
             </div>
             <div class="main__lugares3 main__lugares3__responsive1">
                 <div class="card">
-                    <div id="carousel3" class="carousel slide carousel-fade">
+                    <div id="carousel__lugares--arq" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./resources/arq-fotos/misti.jpg" class="imagen card-img-top d-block"
@@ -137,12 +138,12 @@
                                     class="imagen card-img-top d-block w-100" alt="arequipa">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__lugares--arq"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__lugares--arq"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -165,6 +166,7 @@
 
         <h4> Tours </h4>
 
+        <!-- Grid de 2 columnas y una de ellas con dos filas para titulo y texto, tambien con carrusel de fotos en la primera columna -->
         <div class="index__tour--flex">
 
 
@@ -378,6 +380,8 @@
 
         <h4> Fotos Experiencias </h4>
 
+        <!-- Grid de fotos de 2 columnas y 2 filas para colocar fotos en orden, tambien como carrusel de fotos-->
+
         <div id="carousel__fotos" class="carousel slide" data-bs-ride="#">
             <div class="carousel-inner">
                 <div class="main__fotos--ancho carousel-item active">
@@ -499,6 +503,8 @@
 
         <h4> Videos Experiencias </h4>
 
+        <!-- Carrusel de videos -->
+
         <div id="carousel__videos" class="carousel slide" data-bs-ride="#">
             <div class="carousel-inner">
                 <div class="main__fotos--ancho carousel-item active">
@@ -544,7 +550,7 @@
 
                     <div class="main__videos">
 
-                        <div class="main__videos--arriba">  
+                        <div class="main__videos--arriba">
                             <h5>Videos en Arequipa</h5>
                         </div>
 
@@ -569,7 +575,7 @@
         </div>
 
     </main>
-
+    <!-- Footer -->
     <footer class="footer">
 
         <div class="footer__centrar">
