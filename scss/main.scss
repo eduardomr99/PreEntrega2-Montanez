@@ -10,13 +10,6 @@
 }
 
 
-/* ---HEADER--- */
-
-.header__color {
-    background-color: rgba(168, 212, 172);
-}
-
-
 .header__nav__derecha {
     flex-direction: row-reverse;
 }
@@ -28,7 +21,7 @@
     color: white;
 }
 
-/* Pseudoclases */
+
 .header__hover a:hover {
     color: rgb(251, 251, 251);
     transition: all .3s;
@@ -41,18 +34,7 @@
 }
 
 
-/* ----------------------------------------------------------------MAIN---------------------------------------------------------------------------- */
 
-/* -------------------Base del index (Cards, titulos, subtitulos y parte del body)---------------------------- */
-
-
-h4 {
-    text-align: center;
-    background-color: rgb(32, 117, 50, 0.8);
-    width: 100vw;
-    padding: 2px;
-    overflow: hidden;
-}
 
 .main__subtitulo {
     text-align: center;
@@ -91,18 +73,14 @@ body {
     padding: 0;
 }
 
-/* ----Nivela la altura de todas la imagenes en las que son parte de Cards----- */
 .imagen {
     height: 190px;
 }
-
-/* ----Medida del logo en el Index/Experiencias---- */
 
 .logo__agencia {
     width: 80px;
 }
 
-/*-----------------Irframe---------------- */
 
 
 .main__videos__size {
@@ -110,9 +88,6 @@ body {
     height: 300px;
 }
 
-
-
-/*-------------------------------------Grillas del main----------------------------------------- */
 
 .index__lugares__size {
     width: 100vw;
@@ -148,7 +123,6 @@ body {
 
 
 
-/* ------------------------Index(Sección de Tours, la divición de la grilla)---------------------------- */
 .index__tour--flex {
     display: flex;
     flex-wrap: wrap;
@@ -204,8 +178,6 @@ body {
 }
 
 
-
-/* ---------------------Index(Sección de Fotos, la divición de la grilla)-------------------- */
 
 .main__fotos--ancho {
     width: 600px;
@@ -277,7 +249,6 @@ body {
 
 }
 
-/* Caracteristica de las fotos en la grilla de la Sección Fotos-index */
 
 .main__fotos--imagen {
     height: 160px;
@@ -291,8 +262,6 @@ body {
     margin: 12px;
 }
 
-
-/* ---------------------Index(Sección de Videos, la divición de la grilla)-------------------- */
 
 .main__videos {
     display: grid;
@@ -331,7 +300,6 @@ body {
 
 
 
-/* -------------------------Pagina - Agencia Grilla----------------------- */
 
 .agencia__size {
     width: 800px;
@@ -399,7 +367,6 @@ body {
 /* ---------------------------------------Footer-------------------------------------------- */
 
 .footer {
-    background-color: rgba(168, 212, 172);
     width: 100vw;
     list-style: none;
     padding: 20px 30px 20px 70px;
@@ -460,298 +427,3 @@ body {
 
 
 
-
-
-/* --------------------------Mobile Last---------------------------- */
-
-
-/* --Medias Queries-- */
-
-
-
-@media (max-width: 950px) {
-    .card__texto {
-
-        font-size: small;
-
-    }
-
-}
-
-
-@media (max-width: 800px) {
-
-    .index__lugares__size {
-
-        padding: 0 4% 0.5% 3%;
-
-    }
-
-    .agencia__size {
-
-        width: 600px;
-    }
-
-
-    .card__texto {
-
-        font-size: medium;
-
-    }
-
-
-
-
-}
-
-@media (max-width:640px) {
-
-    .index__lugares__size {
-        display: none;
-    }
-
-    .main__size__responsive1 {
-        width: 100vw;
-        display: grid;
-        padding: 5% 25% 5% 25%;
-        gap: 10px;
-
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-            "main__lugares1"
-            "main__lugares2"
-            "main__lugares3"
-        ;
-    }
-
-    .main__lugares1__responsive1 {
-        grid-area: main__lugares1;
-        padding: 0 50px 0 50px;
-
-    }
-
-    .main__lugares2__responsive1 {
-        grid-area: main__lugares2;
-        padding: 0 50px 0 50px;
-    }
-
-    .main__lugares3__responsive1 {
-        grid-area: main__lugares3;
-        padding: 0 50px 0 50px;
-    }
-
-    .form__centrado {
-        width: 100%;
-        padding: 0 5px 0 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-
-    .agencia__size {
-        width: 300px;
-        display: grid;
-        margin: 0;
-        gap: 2px;
-        padding: 0 20px 0 20px;
-
-        box-sizing: border-box;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "main__agencia1"
-            "main__agencia2"
-        ;
-    }
-
-    .main__agencia1 {
-        grid-area: main__agencia1;
-
-    }
-
-    .main__agencia2 {
-        grid-area: main__agencia2;
-
-    }
-
-
-
-
-
-    /*--------Index (Sección de Tours -Responsive Se cambia a dos columnas) */
-
-    .index__tour {
-        width: 500px;
-        display: grid;
-        gap: 5px;
-        padding: 5px;
-
-        grid-template-columns: 1.5fr 2fr;
-        grid-template-areas:
-            "main__tour1 main__tour2"
-        ;
-
-    }
-
-    .main__tour1 {
-        grid-area: main__tour1;
-        display: flex;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 0 10px 0 10px;
-    }
-
-    .main__tour2 {
-        grid-area: main__tour2;
-        padding: 0 10px 0 10px;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-
-        grid-template-areas:
-            "main__tour2--arriba main__tour2--arriba"
-            "main__tour2--abajo main__tour2--abajo"
-            "main__tour2--abajo main__tour2--abajo";
-
-    }
-
-    .logo__agencia {
-        width: 45px;
-    }
-
-    .imagen {
-        height: 100px;
-    }
-
-    .texto {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 2px;
-        height: 100%;
-        font-size: 10px;
-    }
-
-    h5 {
-        font-size: 11px;
-    }
-
-    .estilo_subtitulo {
-        font-size: 15px;
-        margin: 0;
-    }
-
-    .main__fotos {
-
-        width: 100%;
-
-    }
-
-    .main__fotos--ancho {
-        width: 300px;
-
-    }
-
-    .main__fotos--abajo {
-        width: 400px;
-        height: 100%;
-
-    }
-
-    .main__fotos--arriba {
-        width: 400px;
-    }
-
-    .main__fotos--botones {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 12px;
-    }
-
-    .main__videos__size {
-        width: 380px;
-        height: 300px;
-    }
-
-    .footer-row {
-        width: 300px;
-        display: flex;
-
-        flex-direction: row;
-    }
-
-    .footer-links {
-        width: 50%;
-        display: block;
-        padding: 5px;
-
-    }
-
-    .footer__centrar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .card__texto {
-
-        font-size: small;
-        padding: 5px;
-        margin: 0;
-    }
-
-    .card__texto2 {
-
-        font-size: xx-small;
-    }
-
-    .card__titulo {
-        align-items: center;
-        font-size: medium;
-        padding: 5px 10% 5px 10%;
-        display: flex;
-        justify-content: center;
-    }
-
-
-
-}
-
-
-
-@media (max-width: 500px) {
-
-    .main__lugares1__responsive1 {
-        grid-area: main__lugares1;
-        padding: 0 10% 0 10%;
-
-    }
-
-    .main__lugares2__responsive1 {
-        grid-area: main__lugares2;
-        padding: 0 10% 0 10%;
-    }
-
-    .main__lugares3__responsive1 {
-        grid-area: main__lugares3;
-        padding: 0 10% 0 10%;
-    }
-
-
-
-    .main__lugares--card {
-
-        margin: 0 10% 2% 10%;
-    }
-
-
-
-}
