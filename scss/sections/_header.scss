@@ -1,0 +1,30 @@
+.header__color {
+    background-color: $verde_header;
+
+    .header__nav__derecha {
+        flex-direction: row-reverse;
+
+        .header__nav {
+
+            a {
+
+                &:hover {
+                    color: $blanco;
+                    transition: all .3s;
+                    background-color: $verde_main;
+                }
+
+                &:active {
+                    background-color: $verde_main;
+                    color: $blanco;
+                }
+            }
+
+            .header__nav--active {
+                padding: 8px;
+                background-color: $verde_main;
+                color: $blanco;
+            }
+        }
+    }
+}

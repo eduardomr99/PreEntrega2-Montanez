@@ -1,37 +1,12 @@
+//Assets
 @import './assets/reset';
-@import './sections/header-index';
+@import './assets/variables';
+@import './assets/extend';
 
+//Secciones
+@import './sections/header';
+@import './sections/footer';
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-}
-
-
-.header__nav__derecha {
-    flex-direction: row-reverse;
-}
-
-
-.header__nav--active {
-    padding: 8px;
-    background-color: green;
-    color: white;
-}
-
-
-.header__hover a:hover {
-    color: rgb(251, 251, 251);
-    transition: all .3s;
-    background-color: green;
-}
-
-.header__activo a:active {
-    background-color: green;
-    color: #ffffff;
-}
 
 
 
@@ -363,48 +338,6 @@ body {
     justify-content: center;
 }
 
-
-/* ---------------------------------------Footer-------------------------------------------- */
-
-.footer {
-    width: 100vw;
-    list-style: none;
-    padding: 20px 30px 20px 70px;
-}
-
-.footer-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-links {
-    width: 25%;
-
-}
-
-.footer-links h6 {
-    font-size: 15px;
-    color: black;
-
-    font-weight: 500;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    display: inline-block;
-}
-
-.footer-links ul {
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links ul li a {
-    font-size: 13px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    display: block;
-
-    transition: all .3s ease;
-
-}
 
 
 
