@@ -1,0 +1,109 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.h4 {
+    text-align: center;
+    background-color: $verde_main;
+    width: 100vw;
+    padding: 2px;
+    overflow: hidden;
+}
+
+//Se crea para definir un tamaño estandar, en caso de mobile se adecue al tamaño del card
+.imagen {
+    height: 190px;
+}
+
+@media (max-width:640px) {
+    .imagen {
+        height: 100px;
+    }
+}
+
+//Caracteristicas en todas las paginas para los subtitulos de los Cards
+.main__subtitulo {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: $verde_header;
+}
+
+.estilo_subtitulo {
+    color: $negro;
+    text-decoration: none;
+}
+
+//Cards más grandes en las paginas que no son el index
+.card__texto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 950px) {
+    .card__texto {
+        font-size: small;
+    }
+}
+
+@media (max-width: 800px) {
+    .card__texto {
+        font-size: medium;
+    }
+}
+
+// Card similar al original, pero creado para usar en mobile un tamaño de letra más chiquita en el index
+.card__texto2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width:640px) {
+    .card__texto2 {
+
+        font-size: xx-small;
+    }
+}
+
+.margen {
+    margin: 10px;
+    padding: 0;
+}
+
+//Tamaño del logo de la agencia en Index-Tours
+
+.logo__agencia {
+    width: 80px;
+}
+
+@media (max-width:640px) {
+    .logo__agencia {
+        width: 45px;
+    }
+}
+
+
+//Index-Fotos Para que las fotos tengan el mismo tamaño dentro del recuadro
+.main__fotos--imagen {
+    height: 160px;
+    width: 100%;
+}
