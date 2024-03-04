@@ -1,0 +1,18 @@
+
+//No se coloca uno dentro del otro porque termina cambiando el display tambien chocando con las clases de Bootstrap
+.main__lugares--card {
+    margin: 0 25% 2% 25%;    
+}
+
+.lugares__card__centrado {
+    @extend .flex-center;
+    width: 100%;
+    height: 180px;
+}
+
+.card__titulo {
+    @extend .flex-center;
+    font-size: large;
+    padding: 5px 10% 5px 10%;
+
+}

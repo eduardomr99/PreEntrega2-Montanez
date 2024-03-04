@@ -1,0 +1,20 @@
+.form__centrado {
+    width: 100vw;
+    padding: 0 15% 0 15%;
+    @extend .flex-center;
+
+    .main__formato {
+        background-color: $verde_header;
+        width: 100%;
+        visibility: inherit;
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width:640px) {
+    .form__centrado {
+        padding: 0 5px 0 5px;
+
+    }
+}

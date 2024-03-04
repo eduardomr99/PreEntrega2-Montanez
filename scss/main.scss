@@ -7,107 +7,17 @@
 @import './sections/header';
 @import './sections/footer';
 @import './sections/main-index';
-
-
-
-
-.main__tour2--distribucion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-}
-
-
-.main__fotos--botones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 12px;
-}
-
-
-
-.agencia__size {
-    width: 800px;
-    display: grid;
-    padding: 0 30px 0 30px;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-
-    gap: 40px;
-
-    box-sizing: border-box;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "main__agencia1 main__agencia2"
-    ;
-}
-
-.main__agencia1 {
-    grid-area: main__agencia1;
-
-}
-
-.main__agencia2 {
-    grid-area: main__agencia2;
-
-}
-
-.agencia__size--responsive {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@import './sections/main-contactanos';
+@import './sections/main-lugares';
+@import './sections/main-agencias';
 
 
 
 
 
-/* -------------------------Pagina - Lugares ---------------------------- */
-
-
-.lugares__card__centrado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 180px;
-}
-
-.main__lugares--card {
-
-    margin: 0 25% 2% 25%;
-}
-
-.card__titulo {
-    align-items: center;
-    font-size: large;
-    padding: 5px 10% 5px 10%;
-    display: flex;
-    justify-content: center;
-}
 
 
 
-
-
-/* -------------------------------Pagina - Contáctanos---------------------------------- */
-.form__centrado {
-    width: 100vw;
-    padding: 0 15% 0 15%;
-
-}
-
-.main__formato {
-    background-color: #a8d4ac;
-    width: 100%;
-    visibility: inherit;
-    margin: 10px;
-    padding: 15px;
-}
 
 
 
