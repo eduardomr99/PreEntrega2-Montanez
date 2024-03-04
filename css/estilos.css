@@ -6,7 +6,7 @@
 body {
   overflow-x: hidden; }
 
-.flex-center, .main__fotos--ancho, .main__fotos--ancho .main__fotos .main__fotos--arriba, .main__videos .main__videos--arriba, .main__videos .main__videos--abajo, .form__centrado, .lugares__card__centrado, .card__titulo, .agencia__size--responsive {
+.flex-center, .main__fotos--ancho, .main__fotos--ancho .main__fotos .main__fotos--arriba, .main__videos .main__videos--arriba, .main__videos .main__videos--abajo, .agencia__size--responsive, .lugares__card__centrado, .card__titulo, .form__centrado {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -85,6 +85,12 @@ body {
   height: 160px;
   width: 100%; }
 
+.main__tour2--distribucion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px; }
+
 .header__color {
   background-color: #a8d4ac; }
   .header__color .header__nav__derecha {
@@ -100,44 +106,6 @@ body {
       padding: 8px;
       background-color: green;
       color: white; }
-
-.footer {
-  background-color: #a8d4ac;
-  width: 100vw;
-  list-style: none;
-  padding: 20px 30px 20px 70px; }
-  .footer .footer-row {
-    display: flex;
-    flex-wrap: wrap; }
-    .footer .footer-row div {
-      width: 25%; }
-      .footer .footer-row div h6 {
-        font-size: 15px;
-        color: black;
-        font-weight: 500;
-        border-bottom: 2px solid white;
-        display: inline-block; }
-      .footer .footer-row div ul {
-        padding: 0;
-        margin: 0; }
-        .footer .footer-row div ul li a {
-          font-size: 13px;
-          text-decoration: none;
-          color: black;
-          display: block; }
-
-@media (max-width: 640px) {
-  .footer__centrar {
-    display: flex;
-    justify-content: center; }
-    .footer__centrar .footer-row {
-      width: 300px;
-      display: flex;
-      flex-direction: row; }
-      .footer__centrar .footer-row .footer-links {
-        width: 50%;
-        display: block;
-        padding: 5px; } }
 
 .index__lugares__size {
   width: 100vw;
@@ -295,31 +263,6 @@ body {
     grid-area: main__lugares3;
     padding: 0 4% 0 4%; } }
 
-.form__centrado {
-  width: 100vw;
-  padding: 0 15% 0 15%; }
-  .form__centrado .main__formato {
-    background-color: #a8d4ac;
-    width: 100%;
-    visibility: inherit;
-    margin: 10px;
-    padding: 15px; }
-
-@media (max-width: 640px) {
-  .form__centrado {
-    padding: 0 5px 0 5px; } }
-
-.main__lugares--card {
-  margin: 0 25% 2% 25%; }
-
-.lugares__card__centrado {
-  width: 100%;
-  height: 180px; }
-
-.card__titulo {
-  font-size: large;
-  padding: 5px 10% 5px 10%; }
-
 .agencia__size--responsive .agencia__size {
   width: 800px;
   padding: 0 30px 0 30px;
@@ -349,3 +292,66 @@ body {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: "main__agencia1" "main__agencia2"; } }
+
+.main__lugares--card {
+  margin: 0 25% 2% 25%; }
+
+.lugares__card__centrado {
+  width: 100%;
+  height: 180px; }
+
+.card__titulo {
+  font-size: large;
+  padding: 5px 10% 5px 10%; }
+
+.form__centrado {
+  width: 100vw;
+  padding: 0 15% 0 15%; }
+  .form__centrado .main__formato {
+    background-color: #a8d4ac;
+    width: 100%;
+    visibility: inherit;
+    margin: 10px;
+    padding: 15px; }
+
+@media (max-width: 640px) {
+  .form__centrado {
+    padding: 0 5px 0 5px; } }
+
+.footer {
+  background-color: #a8d4ac;
+  width: 100vw;
+  list-style: none;
+  padding: 20px 30px 20px 70px; }
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap; }
+    .footer .footer-row div {
+      width: 25%; }
+      .footer .footer-row div h6 {
+        font-size: 15px;
+        color: black;
+        font-weight: 500;
+        border-bottom: 2px solid white;
+        display: inline-block; }
+      .footer .footer-row div ul {
+        padding: 0;
+        margin: 0; }
+        .footer .footer-row div ul li a {
+          font-size: 13px;
+          text-decoration: none;
+          color: black;
+          display: block; }
+
+@media (max-width: 640px) {
+  .footer__centrar {
+    display: flex;
+    justify-content: center; }
+    .footer__centrar .footer-row {
+      width: 300px;
+      display: flex;
+      flex-direction: row; }
+      .footer__centrar .footer-row .footer-links {
+        width: 50%;
+        display: block;
+        padding: 5px; } }

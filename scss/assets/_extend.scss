@@ -107,3 +107,11 @@
     height: 160px;
     width: 100%;
 }
+
+//Caracteristica comun para todos los textos de los cards
+.main__tour2--distribucion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
